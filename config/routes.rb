@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :posts do
   resources :comments
   end
+  resources :home
 
-  root to: "posts#index"
+  root to: "home#index"
 end
