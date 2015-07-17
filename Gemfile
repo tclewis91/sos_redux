@@ -30,7 +30,6 @@ gem "react-rails", "~> 1.0"
 gem "sdoc", "~> 0.4", {:group=>:doc}
 gem "uglifier", "~> 2.7"
 gem 'codeclimate_batch'
-gem 'rest-client', '~> 1.8.0'
 gem 'better_errors', '~> 2.1.1'
 gem 'binding_of_caller', '~> 0.7.2'
 gem 'devise', '~> 3.5.1'
