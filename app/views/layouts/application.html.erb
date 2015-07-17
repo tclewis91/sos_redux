@@ -8,18 +8,19 @@
 </head>
  <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Logo</a>
+      <a href="file:///Users/apple/Downloads/mountain22%20(1).svg" class="brand-logo">Wild SOS</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">about</a></li>
-        <li><a href="badges.html">snakes</a></li>
-        <li><a href="collapsible.html">firstaid</a></li>
+        <li><a href="sass.html">About</a></li>
+        <li><a href="badges.html">Snakes</a></li>
+        <li><a href="collapsible.html">First Aid</a></li>
+         <li><a href="/posts"> First Aid</a></li
         <% if user_signed_in? %>
           <li>
         <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
         </li>
         <% else %>
         <li>
-        <%= link_to('Login', new_user_session_path)  %>
+        <%= link_to('Login', new_user_session_path) %>
         </li>
       <% end %>
       </ul>

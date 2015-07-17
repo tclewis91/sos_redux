@@ -11,15 +11,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150715112317) do
+ActiveRecord::Schema.define(version: 20150717144548) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "abouts", force: :cascade do |t|
+    t.string   "info"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "comments", force: :cascade do |t|
     t.string   "comment"
     t.integer  "user_id"
     t.integer  "post_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "first_aids", force: :cascade do |t|
+    t.string   "snake_bite"
+    t.string   "symptoms"
+    t.string   "treatment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -30,6 +44,25 @@ ActiveRecord::Schema.define(version: 20150715112317) do
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "snakes", force: :cascade do |t|
+    t.boolean  "red",               default: false
+    t.boolean  "white",             default: false
+    t.boolean  "orange",            default: false
+    t.boolean  "green",             default: false
+    t.boolean  "blue",              default: false
+    t.boolean  "brown",             default: false
+    t.boolean  "black",             default: false
+    t.boolean  "band_pattern",      default: false
+    t.boolean  "stripe_pattern",    default: false
+    t.boolean  "solid_pattern",     default: false
+    t.boolean  "splotches_pattern", default: false
+    t.string   "image"
+    t.string   "name"
+    t.string   "venom"
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
   end
 
   create_table "users", force: :cascade do |t|
