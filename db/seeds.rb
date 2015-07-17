@@ -1,7 +1,7 @@
 require 'rest_client'
 
 URL = 'https://www.kimonolabs.com/api/' + ENV["kimono_labs_api_id"] + '?apikey=' + ENV["kimono_labs_api_key"]
-
+URL =
 puts URL
 
 res = RestClient::Request.execute(:url => URL, :method => :get, :verify_ssl => false)
