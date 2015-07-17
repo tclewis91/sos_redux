@@ -1,12 +1,33 @@
 require 'rest_client'
 
 URL = 'https://www.kimonolabs.com/api/' + ENV["kimono_labs_api_id"] + '?apikey=' + ENV["kimono_labs_api_key"]
-URL =
 puts URL
 
 res = RestClient::Request.execute(:url => URL, :method => :get, :verify_ssl => false)
 hsh = JSON.parse(res)
-hsh['results']['collection1'].each do |row|
+hsh['results']['Band Snakes'].each do |row|
+
+
+URL = 'https://www.kimonolabs.com/api/' + ENV["kimono_labs_api_id"] + '?apikey=' + ENV["kimono_labs_api_key"]
+puts URL
+
+res = RestClient::Request.execute(:url => URL, :method => :get, :verify_ssl => false)
+hsh = JSON.parse(res)
+hsh['results']['Stripes Sankes'].each do |row|
+
+URL = 'https://www.kimonolabs.com/api/' + ENV["kimono_labs_api_id"] + '?apikey=' + ENV["kimono_labs_api_key"]
+puts URL
+
+res = RestClient::Request.execute(:url => URL, :method => :get, :verify_ssl => false)
+hsh = JSON.parse(res)
+hsh['results']['Solid Snakes'].each do |row|
+
+URL = 'https://www.kimonolabs.com/api/' + ENV["kimono_labs_api_id"] + '?apikey=' + ENV["kimono_labs_api_key"]
+puts URL
+
+res = RestClient::Request.execute(:url => URL, :method => :get, :verify_ssl => false)
+hsh = JSON.parse(res)
+hsh['results']['Blotches Snakes'].each do |row|
 
 
 def change_name(row)
@@ -24,5 +45,11 @@ def change_name(row)
   end
 end
 
+
+
+name
+color
+api
+image
 
 
