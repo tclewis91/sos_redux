@@ -9,5 +9,5 @@ Rails.application.routes.draw do
   end
   resources :home
 
-  root to: "home#index"
+  root to: "posts#index"
 end
