@@ -24,11 +24,9 @@ class SnakesController < ApplicationController
   # POST /snakes
   # POST /snakes.json
   def create
-   year = params[:snake][:color]
-   make = params[:snake][:pattern]
-   model = params[:snake][:model]
-   trany = params[:snake][:trany]
-   current_user.car_id = Car.find_by(color: color, make: make, model: model, trany: trany).id
+   color = params[:snake][:color]
+   pattern = params[:snake][:pattern]
+   current_user.snake_id = Snake.find_by(color: color, pattern: pattern).id
 
 
     respond_to do |format|
