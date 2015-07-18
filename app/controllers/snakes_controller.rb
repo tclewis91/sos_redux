@@ -1,10 +1,12 @@
 class SnakesController < ApplicationController
   before_action :set_snake, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!
 
   # GET /snakes
   # GET /snakes.json
   def index
-    @snakes = Snake.all
+    current_id = current_user.snake_id
+    user_snake = Snake.find(current_id)
   end
 
   # GET /snakes/1
@@ -19,6 +21,7 @@ class SnakesController < ApplicationController
 
   # GET /snakes/1/edit
   def edit
+    @snake = current_user.snake
   end
 
   # POST /snakes
