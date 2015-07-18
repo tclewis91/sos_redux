@@ -75,6 +75,7 @@ class SnakesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def snake_params
-      params[:snake]
+      params.require(:SNAKE).permit(:color, :pattern)
     end
+end
 end
