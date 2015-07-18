@@ -16,6 +16,8 @@ class CreateSnakes < ActiveRecord::Migration
       t.string :image
       t.string :name
       t.string :venom
+      t.string :color
+      t.string :pattern
       t.references :user
 
       t.timestamps null: false

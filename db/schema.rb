@@ -61,6 +61,8 @@ ActiveRecord::Schema.define(version: 20150717144548) do
     t.string   "image"
     t.string   "name"
     t.string   "venom"
+    t.string   "color"
+    t.string   "pattern"
     t.integer  "user_id"
     t.datetime "created_at",                        null: false
     t.datetime "updated_at",                        null: false
