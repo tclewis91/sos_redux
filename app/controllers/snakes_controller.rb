@@ -24,11 +24,16 @@ class SnakesController < ApplicationController
   # POST /snakes
   # POST /snakes.json
   def create
-    @snake = Snake.new(snake_params)
+   year = params[:snake][:color]
+   make = params[:snake][:pattern]
+   model = params[:snake][:model]
+   trany = params[:snake][:trany]
+   current_user.car_id = Car.find_by(color: color, make: make, model: model, trany: trany).id
+
 
     respond_to do |format|
       if @snake.save
-        format.html { redirect_to @snake, notice: 'Snake was successfully created.' }
+        format.html { redirect_to @snake, notice: 'This is your snake.' }
         format.json { render :show, status: :created, location: @snake }
       else
         format.html { render :new }
