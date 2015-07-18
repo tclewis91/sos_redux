@@ -57,15 +57,6 @@ class SnakesController < ApplicationController
     end
   end
 
-  # DELETE /snakes/1
-  # DELETE /snakes/1.json
-  def destroy
-    @snake.destroy
-    respond_to do |format|
-      format.html { redirect_to snakes_url, notice: 'Snake was successfully destroyed.' }
-      format.json { head :no_content }
-    end
-  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -75,7 +66,7 @@ class SnakesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def snake_params
-      params.require(:SNAKE).permit(:color, :pattern)
+      params.require(:snake).permit(:color, :pattern)
     end
 end
-end
+
