@@ -14,25 +14,47 @@
         <li><a href="badges.html">Snakes</a></li>
          <li><a href="badges.html">Forum</a></li>
         <li><a href="collapsible.html">First Aid</a></li>
+        <li><a href="/users/sign_up">Sign In</a></li>
         <% if user_signed_in? %>
-          <li>
-        <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-        </li>
-        <% else %>
-        <li>
-        <%= link_to('Login', new_user_session_path) %>
-        </li>
-      <% end %>
+            <li><%= link_to 'Log Out', destroy_user_session_path, :method => :delete %></li>
+          <% else %>
+            <li><%= link_to 'Log In', "/users/sign_in" %></li>
+        <% end %>
       </ul>
     </div>
   </nav>
 <body>
+
+<div class="row">
+  <div class="col s6">This div is 6-columns wide</div>
+  <div class="col s6">This div is 6-columns wide</div>
+</div>
+
+<div class="row">
+  <div class="col s6">This div is 6-columns wide</div>
+  <div class="col s6">This div is 6-columns wide</div>
+</div>
+
+<div class="row">
+  <div class="col s6">This div is 6-columns wide</div>
+  <div class="col s6">This div is 6-columns wide</div>
+</div>
 
 <%= yield %>
 <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <%= javascript_include_tag 'js/bin/materialize.min.js' %>
    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+<footer class="page-footer">
+          <div class="footer-copyright">
+            <div class="container">
+            WILD SOS © 2015 Copyright Text
+
+            </div>
+          </div>
+        </footer>
+
 
 </body>
 </html>
