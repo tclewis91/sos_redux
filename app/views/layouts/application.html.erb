@@ -10,13 +10,11 @@
     <div class="nav-wrapper">
       <a href="file:///Users/apple/Downloads/mountain22%20(1).svg" class="brand-logo">Wild SOS</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">About</a></li>
-        <li><a href="badges.html">Snakes</a></li>
-         <li><a href="badges.html">Forum</a></li>
+         <li><a href="/posts/new">Forum</a></li>
         <li><a href="collapsible.html">First Aid</a></li>
         <li><a href="/users/sign_up">Sign In</a></li>
         <% if user_signed_in? %>
-            <li><%= link_to 'Log Out', destroy_user_session_path, :method => :delete %></li>
+            <%= link_to 'Sign out', destroy_user_session_path(:authenticity_token => form_authenticity_token()), method: 'delete' %>
           <% else %>
             <li><%= link_to 'Log In', "/users/sign_in" %></li>
         <% end %>
