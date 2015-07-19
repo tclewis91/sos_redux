@@ -1,3 +1,22 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.svg-icons {
+ position: relative;
+ height: 1px;
+ max-width: 20%;
+ padding: 0;
+ padding-bottom: 10%;
+ /* override this inline for aspect ratio other than square */
+}
+.scaling-svg {
+ position: absolute;
+ height: 10%;
+ width: 10%;
+ left: 0;
+ top: 0;
+}
+
+
+@media screen and (max-width: 310px){
+  .svg-icons{
+    width: 40%;
+  }
+}
