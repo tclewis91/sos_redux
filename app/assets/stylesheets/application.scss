@@ -10,16 +10,19 @@ left: 0px;
 bottom: 0px;
 width: 100%;
 color: white;
-background-color: #558b2f;
+background-color: #747222 !important;
 text-align: center;
 }
 
+
 body {
 background-color: #222A36;
+color: white;
+text-align: center;
 }
 
-header {
-  background-color: #558b2f ;
+.nav-wrapper {
+  background-color: #747222;
 }
 
 .containerz {
@@ -28,4 +31,6 @@ header {
   max-height: auto;
 }
 
-@media
+.page-footer {
+background-color: #747222;
+}

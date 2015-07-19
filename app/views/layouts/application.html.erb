@@ -8,8 +8,8 @@
 </head>
  <nav>
     <div class="nav-wrapper">
-      <a href="file:///Users/apple/Downloads/mountain22%20(1).svg" class="brand-logo">Wild SOS</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <a href="/home" class="brand-logo center">Wild SOS</a>
+      <ul id="nav-mobile" class="right">
          <li><a href="/posts/new">Forum</a></li>
         <li><a href="collapsible.html">First Aid</a></li>
         <li><a href="/users/sign_up">Sign In</a></li>
@@ -24,16 +24,15 @@
 <body>
 
 <%= yield %>
-<!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <%= javascript_include_tag 'js/bin/materialize.min.js' %>
    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
-<footer class="page-footer">
-    <div class="container">
+  <footer class="page-footer">
+  <div class="container">
     WILD SOS © 2015 Copyright Text
     </div>
-</footer>
+  </footer>
 
 
 </body>
