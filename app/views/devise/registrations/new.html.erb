@@ -6,16 +6,19 @@
   <%= devise_error_messages! %>
 
     <div class="input-field validate col s12" id="email" type="email">
+      <i class="material-icons prefix">assignment_ind</i>
       <%= f.label :email %>
       <%= f.email_field :email, autofocus: true %>
     </div>
 
     <div class="input-field">
+      <i class="material-icons prefix">vpn_key</i>
       <%= f.label :password, "Password (8 Characters Minimum)" %>
       <%= f.password_field :password, autocomplete: "off" %>
     </div>
 
   <div class="input-field">
+    <i class="material-icons prefix">vpn_key</i>
     <%= f.label :password_confirmation, "Password Confirmation" %>
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
@@ -32,3 +35,4 @@
       <%= render "devise/shared/links" %>
     </div>
   </div>
+</div>

@@ -14,7 +14,7 @@
         <li><a href="collapsible.html">First Aid</a></li>
         <li><a href="/users/sign_up">Sign In</a></li>
         <% if user_signed_in? %>
-            <%= link_to 'Sign out', destroy_user_session_path(:authenticity_token => form_authenticity_token()), method: 'delete' %>
+            <li><%= link_to 'Sign out', destroy_user_session_path(:authenticity_token => form_authenticity_token()), method: 'delete' %><li>
           <% else %>
             <li><%= link_to 'Log In', "/users/sign_in" %></li>
         <% end %>
