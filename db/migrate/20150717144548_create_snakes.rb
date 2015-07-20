@@ -18,6 +18,7 @@ class CreateSnakes < ActiveRecord::Migration
       t.string :venom
       t.string :color
       t.string :pattern
+      t.string :snake_id
       t.references :user
 
       t.timestamps null: false

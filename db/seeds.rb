@@ -11,3 +11,4 @@ hsh['results']['Band Snakes'].each do |row|
                   image: row['image']['href']
                         })
               end
+snake_id =
