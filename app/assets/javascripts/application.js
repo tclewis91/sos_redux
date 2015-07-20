@@ -18,3 +18,8 @@
 //= require components
 //= require materialize-sprockets
 //= require_tree .
+
+
+var ready = function() {
+ $(".button-collapse").sideNav();
+};
