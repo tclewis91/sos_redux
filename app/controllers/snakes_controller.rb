@@ -5,8 +5,7 @@ class SnakesController < ApplicationController
   # GET /snakes
   # GET /snakes.json
   def index
-    100.times { puts User.first.inspect }
-    # current_user = current_user.snake_id
+    current_user = current_user.snake_id
     user_snake = Snake.find(current_id)
   end
 

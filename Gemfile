@@ -11,7 +11,7 @@ group :test, :development do
   gem "pry", "~> 0.10"
   gem "spring", "~> 1.3"
   gem "web-console", "~> 2.1"
-end
+  end
 
 gem "bullet", "~> 4.14", {:group=>:development}
 gem "codeclimate-test-reporter", "~> 0.4", {:group=>:test, :require=>nil}
@@ -38,3 +38,6 @@ gem 'haml', '~> 4.0.6'
 gem 'simple_form'
 gem 'turbolinks'
 gem 'rest-client'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-moment'
+end
