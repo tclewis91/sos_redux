@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  emergency_spider: MyText
+  snake_bite: MyText
+  spider_bite: MyText
+  emergency_snake: MyText
+
+two:
+  emergency_spider: MyText
+  snake_bite: MyText
+  spider_bite: MyText
+  emergency_snake: MyText

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Emergency spider:</strong>
+  <%= @firstaid.emergency_spider %>
+</p>
+
+<p>
+  <strong>Snake bite:</strong>
+  <%= @firstaid.snake_bite %>
+</p>
+
+<p>
+  <strong>Spider bite:</strong>
+  <%= @firstaid.spider_bite %>
+</p>
+
+<p>
+  <strong>Emergency snake:</strong>
+  <%= @firstaid.emergency_snake %>
+</p>
+
+<%= link_to 'Edit', edit_firstaid_path(@firstaid) %> |
+<%= link_to 'Back', firstaids_path %>

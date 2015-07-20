@@ -1,0 +1,14 @@
+<%= simple_form_for(@firstaid) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :emergency_spider %>
+    <%= f.input :snake_bite %>
+    <%= f.input :spider_bite %>
+    <%= f.input :emergency_snake %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

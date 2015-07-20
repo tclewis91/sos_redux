@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Firstaids</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Emergency spider</th>
+      <th>Snake bite</th>
+      <th>Spider bite</th>
+      <th>Emergency snake</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @firstaids.each do |firstaid| %>
+      <tr>
+        <td><%= firstaid.emergency_spider %></td>
+        <td><%= firstaid.snake_bite %></td>
+        <td><%= firstaid.spider_bite %></td>
+        <td><%= firstaid.emergency_snake %></td>
+        <td><%= link_to 'Show', firstaid %></td>
+        <td><%= link_to 'Edit', edit_firstaid_path(firstaid) %></td>
+        <td><%= link_to 'Destroy', firstaid, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Firstaid', new_firstaid_path %>
