@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   resources :firstaids
   resources :snakes
-  resources :first_aids
   resources :abouts
   devise_for :users
 
