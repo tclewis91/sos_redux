@@ -20,6 +20,7 @@
 //= require_tree .
 
 
-var ready = function() {
- $(".button-collapse").sideNav();
-};
+ $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+
