@@ -43,11 +43,24 @@ background-color: #264556 !important;
   color: #264556 !important;
 }
 
-.bannerz {
-  background-image: url(images/road.jpg);
-  height: 15%;
-  width: cover;
-  overflow: hidden;
-  text-align: center;
-  }
+.card-content {
+color: black !important;
+}
+.card-image{
+    position: relative !important;
+    width: 100% !important;
+    height: 48% !important;
+    background-size: cover !important;
+    overflow: hidden !important;
+    font-family: 'Dosis', sans-serif;
+}
+.card{
+  background-size: cover !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 100% !important;
+  height: auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
 
