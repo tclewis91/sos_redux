@@ -28,9 +28,7 @@ text-align: center;
 .containerz {
   max-width: 310px;
   margin: 0 auto;
-  max-height: auto;
+  max-height: auto !important;
 }
 
-.page-footer {
-background-color: #747222;
-}
+

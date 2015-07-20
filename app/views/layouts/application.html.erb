@@ -11,7 +11,7 @@
       <a href="/home" class="brand-logo center">Wild SOS</a>
       <ul id="nav-mobile" class="right">
          <li><a href="/posts/new">Forum</a></li>
-        <li><a href="collapsible.html">First Aid</a></li>
+        <li><a href="/firstaid">First Aid</a></li>
         <li><a href="/users/sign_up">Sign In</a></li>
         <% if user_signed_in? %>
             <li><%= link_to 'Sign out', destroy_user_session_path(:authenticity_token => form_authenticity_token()), method: 'delete' %><li>
