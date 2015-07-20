@@ -5,7 +5,7 @@ class SnakesController < ApplicationController
   # GET /snakes
   # GET /snakes.json
   def index
-    current_user = current_user.snake_id
+    current_id = current_user.snake_id
     user_snake = Snake.find(current_id)
   end
 
@@ -33,7 +33,7 @@ class SnakesController < ApplicationController
 
 
     respond_to do |format|
-      if @snake.save
+      if current_user.snake_id
         format.html { redirect_to @snake, notice: 'This is your snake.' }
         format.json { render :show, status: :created, location: @snake }
       else
