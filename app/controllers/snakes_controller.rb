@@ -5,10 +5,7 @@ class SnakesController < ApplicationController
   # GET /snakes
   # GET /snakes.json
   def index
-    @current_id = current_user.snake_id
-    if current_user.snake_id(params[:id]) == nil
-      snake_id == 1
-    end
+    @snakes = Snake.all
   end
 
   # GET /snakes/1
@@ -17,7 +14,9 @@ class SnakesController < ApplicationController
   end
 
   def match_red
-    match_red
+    snake = Snake.find(params[:id])
+    snake.match_red
+    redirect_to :back
   end
   # GET /snakes/new
   def new

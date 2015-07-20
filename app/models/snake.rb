@@ -2,8 +2,10 @@ class Snake < ActiveRecord::Base
   belongs_to :user
 
 def match_red
-  if red == false
-  update_attribute(:red, true)
+  if red
+    update_attribute(:red, false)
+  else
+    update_attribute(:red, true)
   end
 end
 

@@ -30,14 +30,6 @@ ActiveRecord::Schema.define(version: 20150720052153) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "first_aids", force: :cascade do |t|
-    t.string   "snake_bite"
-    t.string   "symptoms"
-    t.string   "treatment"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "firstaids", force: :cascade do |t|
     t.text     "emergency_spider"
     t.text     "snake_bite"
@@ -93,7 +85,6 @@ ActiveRecord::Schema.define(version: 20150720052153) do
     t.datetime "confirmation_sent_at"
     t.string   "unconfirmed_email"
     t.string   "name"
-    t.string   "snake_id"
     t.text     "emergency_contact"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false

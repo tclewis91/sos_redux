@@ -31,7 +31,6 @@ class DeviseCreateUsers < ActiveRecord::Migration
       # t.datetime :locked_at
 
       t.string :name
-      t.string :snake_id
       t.text :emergency_contact
 
       t.timestamps null: false
