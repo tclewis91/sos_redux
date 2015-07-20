@@ -45,12 +45,14 @@ background-color: #264556 !important;
 
 .card-content {
 color: black !important;
+height: auto !important;
+text-align: left;
 
 }
 .card-image{
     position: relative !important;
     width: 100% !important;
-    height: 48% !important;
+    height: 45% !important;
     background-size: cover !important;
     overflow: hidden !important;
     font-family: 'Dosis', sans-serif;
