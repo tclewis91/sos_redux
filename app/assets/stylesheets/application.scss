@@ -45,6 +45,7 @@ background-color: #264556 !important;
 
 .card-content {
 color: black !important;
+
 }
 .card-image{
     position: relative !important;
@@ -56,12 +57,21 @@ color: black !important;
 }
 .card{
   background-size: cover !important;
-   position: relative !important;
+  position: relative !important;
   margin: 0px !important;
   padding: 0px !important;
   width: 100% !important;
   height: auto;
   font-family: 'Open Sans', sans-serif;
 }
+.card-title{
+  font-family: 'Dosis', sans-serif !important;
+}
 
-
+.card-action{
+font-family: 'Dosis', sans-serif !important;
+}
+.ntcs {
+  color: black !important;
+  text-align: left;
+}
