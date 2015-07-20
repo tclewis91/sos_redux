@@ -5,8 +5,10 @@ class SnakesController < ApplicationController
   # GET /snakes
   # GET /snakes.json
   def index
-    current_id = current_user.snake_id
-    user_snake = Snake.find(current_id)
+    @current_id = current_user.snake_id
+    if current_user.snake_id(params[:id]) == nil
+      snake_id == 1
+    end
   end
 
   # GET /snakes/1
@@ -14,14 +16,22 @@ class SnakesController < ApplicationController
   def show
   end
 
+  def match_red
+    match_red
+  end
   # GET /snakes/new
   def new
     @snake = Snake.new
+    if current_user.snake_id == nil
+      @current_id = current_user.snake_id = 1
+    else
+      @current_id = current_user.snake_id
+    end
   end
 
   # GET /snakes/1/edit
   def edit
-    @snake = current_user.snake
+    @snake = current_user.snake_id
   end
 
   # POST /snakes

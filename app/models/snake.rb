@@ -60,9 +60,4 @@ def match_solid
     update_attribute(:solid_color_pattern, true)
   end
 end
-
-def match_blotch
-  if blotch_pattern == false
-    update_attributes(:blotch_pattern, true)
-  end
 end

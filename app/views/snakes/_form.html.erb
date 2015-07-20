@@ -1,10 +1,17 @@
-<%= simple_form_for(@snake) do |f| %>
-  <%= f.error_notification %>
-  <div class="form-inputs">
+
+  <div class= "row">
+    <div class="red_method">
+      <%= link_to 'red', match_red_snake_path(@current_id), method: :patch %>
+    </div>
+
+*possibly add toggle*
+
+<div class="form-inputs">
   </div>
   <form action="#">
     <p>
       <input type="checkbox" id="red" />
+      <%= link_to 'red', match_red_snake_path(@current_id), method: :patch %>
       <label for="red">Red</label>
     </p>
     <p>
@@ -62,6 +69,3 @@
     </p>
     </form>
   <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
