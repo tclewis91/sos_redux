@@ -21,10 +21,15 @@ color: white;
 text-align: center;
 }
 
-.snakeimage{
-  height: 30px !important;
+.titles{
+  font-family: 'Dosis', sans-serif !important
 }
-
+.snameimage{
+  display: table;
+  }
+.snakeimage.row div{
+  display: table-cell;
+}
 
 
 .loginz {
@@ -59,7 +64,7 @@ height: auto !important;
 text-align: left;
 
 }
-.card-image{
+.card-image {
     position: relative !important;
     width: 100% !important;
     height: 45% !important;
