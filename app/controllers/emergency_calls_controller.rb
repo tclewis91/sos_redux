@@ -12,6 +12,8 @@ class EmergencyCallsController < ApplicationController
   def show
   end
 
+  tel_to '+1 318 225-0495'
+
   # GET /emergency_calls/new
   def new
     @emergency_call = EmergencyCall.new
@@ -51,24 +53,4 @@ class EmergencyCallsController < ApplicationController
     end
   end
 
-  # DELETE /emergency_calls/1
-  # DELETE /emergency_calls/1.json
-  def destroy
-    @emergency_call.destroy
-    respond_to do |format|
-      format.html { redirect_to emergency_calls_url, notice: 'Emergency call was successfully destroyed.' }
-      format.json { head :no_content }
-    end
-  end
 
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_emergency_call
-      @emergency_call = EmergencyCall.find(params[:id])
-    end
-
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def emergency_call_params
-      params.require(:emergency_call).permit(:phone, :phone_number)
-    end
-end
