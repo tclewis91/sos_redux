@@ -1,22 +1,70 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Austin Snakes</h1>
+
+<h3>Venomous Snakes</h3>
+<div class="snakeimage">
 <div class="row">
-<div class="col s3 m4">
-
-<% @snakes.each do |snake| %>
-  <li>
-    <div class='snake'>
-     <%= image_tag snake.image %>
-  <div class="col s3 m4">
-     <div class='info'>
-       <%= [snake.name, snake.venom].join %>
-
-       </div>
+  <div class="col s6 l4">
+    <div class="card">
+      <div class="card-image">
+        <img src="http://www.austinreptileservice.net/image/westerncottonmouth3.jpg">
+        <span class="card-title">Western Cotton Mouth</span>
+      </div>
+      <div class="card-content">
+        <p>Symptoms: </p>
+      </div>
     </div>
-  </li>
-<% end %>
-</ul>
-<br>
+  </div>
 
-<%= link_to 'Snakes', new_snake_path %>
+
+    <div class="col s6 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="http://www.austinreptileservice.net/image/texascoral2.jpg">
+          <span class="card-title">Coral Snake</span>
+        </div>
+        <div class="card-content">
+          <p>Symptoms: </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s6 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="http://www.austinreptileservice.net/image/broadbandedcopperhead3.jpg">
+          <span class="card-title">Broadbanded Copperhead</span>
+        </div>
+        <div class="card-content">
+          <p>Symptoms: </p>
+        </div>
+      </div>
+    </div>
+
+ <div class="col s6 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="http://www.austinreptileservice.net/image/canebrake.jpg">
+          <span class="card-title">Canbrake</span>
+        </div>
+        <div class="card-content">
+          <p>Symptoms: </p>
+        </div>
+      </div>
+    </div>
+   <div class="col s6 l4">
+      <div class="card">
+        <div class="card-image">
+          <img src="http://www.austinreptileservice.net/image/westerndiamondbackrattle4.jpg">
+          <span class="card-title">Canbrake</span>
+        </div>
+        <div class="card-content">
+          <p>Symptoms: </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+

@@ -4,10 +4,10 @@ URL = 'https://www.kimonolabs.com/api/' + ENV["kimono_labs_api_id"] + '?apikey='
 puts URL
 res = RestClient::Request.execute(:url => URL, :method => :get, :verify_ssl => false)
 hsh = JSON.parse(res)
-hsh['results']['Band Snakes'].each do |row|
-  Snake.create({ name: row['name'],
-                  venom: row['venom'],
-                  color: row['color']['text'],
-                  image: row['image']['href']
+hsh['results']['Band Snakes'].each do |x|
+  Snake.create({ name: x['name'],
+                  venom: x['venom'],
+                  color: x['color']['text'],
+                  image: x['image']['src']
                         })
               end
