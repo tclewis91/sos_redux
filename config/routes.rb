@@ -27,5 +27,7 @@ Rails.application.routes.draw do
   resources :user
   resources :home
 
+  resources :spiders
+
   root to: "home#index"
 end
