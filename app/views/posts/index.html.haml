@@ -7,3 +7,6 @@
         = time_ago_in_words(post.created_at)
         by
         = post.user.email
+
+
+= link_to "New Thread", new_post_path(@post), class: "button"
