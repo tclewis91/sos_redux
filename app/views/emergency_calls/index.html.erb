@@ -1,29 +1,5 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Listing Emergency Calls</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Phone</th>
-      <th>Phone number</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @emergency_calls.each do |emergency_call| %>
-      <tr>
-        <td><%= emergency_call.phone %></td>
-        <td><%= emergency_call.phone_number %></td>
-        <td><%= link_to 'Show', emergency_call %></td>
-        <td><%= link_to 'Edit', edit_emergency_call_path(emergency_call) %></td>
-        <td><%= link_to 'Destroy', emergency_call, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Emergency call', new_emergency_call_path %>
+ tel_to '(318) 225 0495'
+ <a href="tel:3182250495">(318) 225 0495</a>
